@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="js/swiper/swiper.min.css">
     <script src="js/swiper/swiper.min.js"></script>
 
+    <!-- aos 관련 코드 -->
+    <link href="js/aos/aos.css" rel="stylesheet">
+    <script src="js/aos/aos.js"></script>
+
     <link rel="stylesheet" href="css/reset.css">
     <script src="js/respond.min.js"></script>
     <script src="js/jquery.min.js"></script>
@@ -35,11 +39,14 @@
                 본 사이트는 Chrome에 최적화 되어있습니다.
             </b>
             <a href="https://www.sancheong.go.kr/www/index.do" target="_blank" class="modal-origin">
-                원사이트는 https://www.sancheong.go.kr/www/index.do입니다.
+                원사이트
                 <img src="images/original.png" alt="원사이트">
+                입니다.
             </a>
             <div class="modal-desc">                
-                원사이트와 달리 <em>favicon 추가</em>되었습니다.
+                본 사이트와 달리 <em>favicon 추가</em>되었습니다.
+                <br>
+                본 사이트를 통해 <em>slide, tab메뉴</em>만드는 법을 배워 나갔습니다.
             </div>
             <div class="modal-close">닫기</div>
         </div>
@@ -658,7 +665,7 @@
             <!-- 알려드립니다 -->
             <section class="visual">
                 <div class="container">
-                    <div class="visual-top clearfix">
+                    <div class="visual-top clearfix" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
                         <div class="left clearfix">
                             <div class="weather-wrap">
                                 <span class="weather-icon">
@@ -702,7 +709,7 @@
                     </div>
                     <div class="visual-main clearfix">
                         <div class="left">
-                            <div class="visual-slide">
+                            <div class="visual-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                                 <div class="visual-slide-top">
                                     <h2>알려드립니다</h2>
                                     <div class="sw-visual-control clearfix">
@@ -744,7 +751,7 @@
                             </div>
                         </div>
                         <div class="right">
-                            <div class="group">
+                            <div class="group"  data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
                                 <ul class="group-list">
                                     <li>
                                         <a href="#">
@@ -766,7 +773,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="mayor clearfix">
+                            <div class="mayor clearfix"  data-aos="fade-left" data-aos-duration="800" data-aos-delay="550">
                                 <div class="mayor-txt">
                                     <a href="#">
                                         명품산청, 행복산청
@@ -787,7 +794,7 @@
             <!-- 새소식 -->
             <section class="notice">
                 <div class="container clearfix">
-                    <div class="left">
+                    <div class="left"  data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                         <div class="notice-top">
                             <ul class="notice-list">
                                 <li>
@@ -1208,7 +1215,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="right">
+                    <div class="right" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                         <div class="notice-slide">
                             <div class="notice-slide-top">
                                 <h2>팝업존</h2>
@@ -1230,7 +1237,7 @@
             </section>
             <!-- 자주찾는 서비스 -->
             <section class="service">
-                <div class="container">
+                <div class="container"  data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <h2>
                         자주 찾는 서비스
                     </h2>
@@ -1319,7 +1326,7 @@
             <!-- 퀵메뉴 -->
             <section class="quick">
                 <div class="container">
-                    <div class="quick-wrap">
+                    <div class="quick-wrap"  data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                         <div class="quick-menu">
                             <ul class="quick-menu-list">
                                 <li>
@@ -1382,7 +1389,7 @@
             </section>
             <!-- 산청으로 떠나요 -->
             <section class="tour">
-                <div class="container">
+                <div class="container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
 
 
 
@@ -1538,11 +1545,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img01.jpg" alt="산청 9경 이미지">
+                                                <img src="images/tour_img10.jpg" alt="산청 9경 이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제 1경
-                                                <b>지리산 천왕봉</b>
+                                                생초국제조각공원
+                                                <b>꽃잔디축제</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1551,11 +1558,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img02.jpg" alt="산청 9경 이미지">
+                                                <img src="images/tour_img11.jpg" alt="산청 9경 이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제 2경
-                                                <b>대원사 계곡</b>
+                                                철쭉꽃의 향연
+                                                <b>황매산철쭉제</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1564,11 +1571,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img03.jpg" alt="산청 9경 이미지">
+                                                <img src="images/tour_img12.jpg" alt="산청 9경 이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제 3경
-                                                <b>황매산 철쭉</b>
+                                                맑은물 경호강
+                                                <b>물 페스티벌</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1577,11 +1584,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img04.jpg" alt="산청 9경 이미지">
+                                                <img src="images/tour_img13.jpg" alt="산청 9경 이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제 4경
-                                                <b>전구형왕릉</b>
+                                                대한민국 대표축제
+                                                <b>한방약초축제</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1590,11 +1597,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img05.jpg" alt="산청 9경 이미지">
+                                                <img src="images/tour_img14.jpg" alt="산청 9경 이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제 5경
-                                                <b>경호강 비경</b>
+                                                남명조식선생의 정신
+                                                <b>남명선비문화축제</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1603,54 +1610,15 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img06.jpg" alt="산청 9경 이미지">
+                                                <img src="images/tour_img15.jpg" alt="산청 9경 이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제 6경
-                                                <b>남사예담촌</b>
+                                                대한민국 대표과일
+                                                <b>산청곶감축제</b>
                                             </p>
                                         </a>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="tour-box">
-                                        <a href="#" class="tour-box-link">
-                                            <div class="tour-box-img">
-                                                <img src="images/tour_img07.jpg" alt="산청 9경 이미지">
-                                            </div>
-                                            <p class="tour-box-title">
-                                                제 7경
-                                                <b>남명조식유적지</b>
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="tour-box">
-                                        <a href="#" class="tour-box-link">
-                                            <div class="tour-box-img">
-                                                <img src="images/tour_img08.jpg" alt="산청 9경 이미지">
-                                            </div>
-                                            <p class="tour-box-title">
-                                                제 8경
-                                                <b>정취암 조망</b>
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="tour-box">
-                                        <a href="#" class="tour-box-link">
-                                            <div class="tour-box-img">
-                                                <img src="images/tour_img09.jpg" alt="산청 9경 이미지">
-                                            </div>
-                                            <p class="tour-box-title">
-                                                제 9경
-                                                <b>동의보감촌</b>
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
+                                </div>                                
                             </div>
                             <div class="sw-tour-control">
                                 <button class="sw-tour-prev"></button>
@@ -1663,11 +1631,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img01.jpg" alt="산청 9경 이미지">
+                                                <img src="images/tour_img16.jpg" alt="산청 9경 이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제 1경
-                                                <b>지리산 천왕봉</b>
+                                                약초향기 그득한~
+                                                <b>동의보감촌</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1676,62 +1644,10 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img02.jpg" alt="산청 9경 이미지">
+                                                <img src="images/tour_img17.jpg" alt="산청 9경 이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제 2경
-                                                <b>대원사 계곡</b>
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="tour-box">
-                                        <a href="#" class="tour-box-link">
-                                            <div class="tour-box-img">
-                                                <img src="images/tour_img03.jpg" alt="산청 9경 이미지">
-                                            </div>
-                                            <p class="tour-box-title">
-                                                제 3경
-                                                <b>황매산 철쭉</b>
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="tour-box">
-                                        <a href="#" class="tour-box-link">
-                                            <div class="tour-box-img">
-                                                <img src="images/tour_img04.jpg" alt="산청 9경 이미지">
-                                            </div>
-                                            <p class="tour-box-title">
-                                                제 4경
-                                                <b>전구형왕릉</b>
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="tour-box">
-                                        <a href="#" class="tour-box-link">
-                                            <div class="tour-box-img">
-                                                <img src="images/tour_img05.jpg" alt="산청 9경 이미지">
-                                            </div>
-                                            <p class="tour-box-title">
-                                                제 5경
-                                                <b>경호강 비경</b>
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="tour-box">
-                                        <a href="#" class="tour-box-link">
-                                            <div class="tour-box-img">
-                                                <img src="images/tour_img06.jpg" alt="산청 9경 이미지">
-                                            </div>
-                                            <p class="tour-box-title">
-                                                제 6경
+                                                아름다운 마을 1호
                                                 <b>남사예담촌</b>
                                             </p>
                                         </a>
@@ -1741,11 +1657,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img07.jpg" alt="산청 9경 이미지">
+                                                <img src="images/tour_img18.jpg" alt="산청 9경 이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제 7경
-                                                <b>남명조식유적지</b>
+                                                자연에서의 하루
+                                                <b>캠핑</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1754,28 +1670,15 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img08.jpg" alt="산청 9경 이미지">
+                                                <img src="images/tour_img19.jpg" alt="산청 9경 이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제 8경
-                                                <b>정취암 조망</b>
+                                                길 따라 자연 따라~♪
+                                                <b>지리산 둘레길</b>
                                             </p>
                                         </a>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="tour-box">
-                                        <a href="#" class="tour-box-link">
-                                            <div class="tour-box-img">
-                                                <img src="images/tour_img09.jpg" alt="산청 9경 이미지">
-                                            </div>
-                                            <p class="tour-box-title">
-                                                제 9경
-                                                <b>동의보감촌</b>
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
+                                </div>                                
                             </div>
                             <div class="sw-tour-control">
                                 <button class="sw-tour-prev"></button>

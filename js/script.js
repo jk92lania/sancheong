@@ -1,4 +1,8 @@
 window.onload = function () {
+    AOS.init({
+        once : true
+    });
+
     // 클론코드 관련 안내
     let modal_close = $('.modal-close');
     let modal = $('.modal');

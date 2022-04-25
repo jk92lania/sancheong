@@ -3121,6 +3121,40 @@ body {
     display: block !important;
 }
 
+.sw-quick-1 {
+    padding: 0 25px;
+}
+.sw-quick-1 .swiper-wrapper {
+    display: block;
+    width: 100%;
+}
+
+.sw-quick-1 .swiper-slide {
+    display: inline-block;
+    width: auto;
+}
+.sw-quick-2 .swiper-wrapper {
+    display: block;
+    width: 100%;
+}
+
+.sw-quick-2 .swiper-slide {
+    display: inline-block;
+    width: auto;
+}
+.sw-quick-3 .swiper-wrapper {
+    display: block;
+    width: 100%;
+}
+
+.sw-quick-3 .swiper-slide {
+    display: inline-block;
+    width: auto;
+}
+
+
+
+
 .quick-link {
     position: relative;
     display: inline-block;
@@ -3283,6 +3317,68 @@ body {
 }
 
 
+.sw-quick-prev {
+    display: none;
+    width: 37px;
+    height: 37px;
+    border: 1px solid #eaeaea;
+    border-radius: 13px;
+    background-color: #fff;
+}
+
+.sw-quick-prev::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 31px;
+    height: 31px;
+    margin: auto;
+    background-image: url('../images/control_sprite.png');
+    background-repeat: no-repeat;
+    
+    transform: rotateY(180deg);
+
+}
+
+.sw-quick-prev::after {
+    display: none;
+}
+
+
+.sw-quick-next {
+    display: none;    
+    width: 37px;
+    height: 37px;
+    border: 1px solid #eaeaea;
+    border-radius: 13px;
+    background-color: #fff;
+}
+
+.sw-quick-next::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 31px;
+    height: 31px;
+    margin: auto;
+    background-image: url('../images/control_sprite.png');
+    background-repeat: no-repeat;    
+
+}
+
+.sw-quick-next::after {
+    display: none;
+}
+
+
 @media all and (max-width : 1430px) {
     .quick .container {
         width: 1200px;
@@ -3293,6 +3389,31 @@ body {
     .quick .container {
         width: 1000px;
     }
+    .sw-quick-1 .swiper-wrapper {
+        display: flex;
+    } 
+    .sw-quick-2 .swiper-wrapper {
+        display: flex;
+    } 
+    .sw-quick-3 .swiper-wrapper {
+        display: flex;
+    }
+    .sw-quick-prev {
+        display: block;
+    }
+    .sw-quick-next {
+        display: block;
+
+    }
+    .quick-link-1 {
+        margin: 0;
+    }
+    .quick-link-2 {
+        margin: 0;
+    }
+    .quick-link-3 {
+        margin: 0;
+    }
 
 }
 
@@ -3300,6 +3421,10 @@ body {
     .quick .container {
         width: 100%;
     }
+    .quick-list {
+        width: 100%;
+    }
+
 }
 
 @media all and (max-width : 800px) {}

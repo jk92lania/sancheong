@@ -279,8 +279,70 @@ window.onload = function () {
     });
 
     
+   // 퀵링크 관련 슬라이드
+   let sw_quick;
+   // 기본 슬라이드 대상
+   let sw_quick_div = '.sw-quick-1';  
+   // swiper 에 걸어줄 옵션  
+   let sw_quick_obj = {
+       slidesPerView: 2,
+       navigation : {
+        prevEl : '.sw-quick-prev',
+        nextEl : '.sw-quick-next',
+    },
+    slidesBetween: 10,
+    breakpoints : {
+        1000 : {
+            slidesPerView: 4,
+           }, 
+           640 : {
+               slidesPerView: 3,
+           }, 
+       }
+   };
+   
+   // sw_quick_1 = new Swiper('.sw-quick-1', sw_quick_1_obj)
+   
+   $(window).resize(function(){
+       resetQuick();
+   });
+
+   function resetQuick() {
+       let temp = $(window).width();
+
+       if(temp <= 1200 && sw_quick == undefined){
+           console.log('새로 생성되었다.')
+        //    $('.sw-quick-1').addClass('quick-list-focus');
+           sw_quick = new Swiper(sw_quick_div, sw_quick_obj);        
+        }else if(temp <= 1200 && sw_quick != undefined){
+            // slide 이미 존재할 때 새로 생성할 필요 없음
+        }else{
+            if(sw_quick != undefined) {
+                // 이미 생성된 slide 삭제
+                console.log('삭제됨')
+                sw_quick.destroy();
+                sw_quick = undefined;
+
+                // swiper wrapper 스타일시트 제거
+                $('.sw-quick-1').find('swiper-wrapper').removeAttr('sytle');
+                $('.sw-quick-2').find('swiper-wrapper').removeAttr('sytle');
+                $('.sw-quick-3').find('swiper-wrapper').removeAttr('sytle');
+                
+                // swiper slide 스타일시트 제거
+                $('.sw-quick-1').find('swiper-slide').removeAttr('sytle');
+                $('.sw-quick-2').find('swiper-slide').removeAttr('sytle');
+                $('.sw-quick-3').find('swiper-slide').removeAttr('sytle');
+                // $('.sw-quick-1').removeClass('quick-list-focus');
+            }            
+        }
+    }
+    // 처음에 너비 계산 후 실행
+    resetQuick();
+
+
+    
     // 자주 찾는 서비스 슬라이드
-    let swiper = new Swiper(".sw-service", {
+    let sw_service = new Swiper(".sw-service", {
         navigation: {
             nextEl: ".sw-service-next",
             prevEl: ".sw-service-prev",
@@ -309,8 +371,15 @@ window.onload = function () {
             quick_tab_contents.removeClass('quick-list-focus');
             quick_tab_contents.eq(index).addClass('quick-list-focus');
 
+            // 탭메뉴 누를 시 slide 처리 진행
+            sw_quick_div = `.sw-quick-${index + 1}`;
+            console.log(sw_quick_div);
+            sw_quick = undefined;
+            resetQuick();
+
         });
     });
+
 
     // 산청 슬라이드
     let sw_tour_1 = new Swiper('.sw-tour-1', {

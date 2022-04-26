@@ -2215,6 +2215,7 @@ body {
         width: 68%;
         padding-top: 18px;
         padding-left: 25px;
+        padding-right: 0px;
     }
 
     .mayor-txt>a {
@@ -3109,7 +3110,8 @@ body {
 .quick-list {
     position: relative;
     display: none;
-    width: 948px;
+    /* width: 948px; */
+    width: 1000px;
 
     text-align: center;
     margin: 0 auto;
@@ -3383,6 +3385,15 @@ body {
     .quick .container {
         width: 1200px;
     }
+    .sw-quick-1 {
+        padding: 0;
+    }
+    .sw-quick-2 {
+        padding: 0;
+    }
+    .sw-quick-3 {
+        padding: 0;
+    }
 }
 
 @media all and (max-width : 1200px) {
@@ -3405,7 +3416,10 @@ body {
         display: block;
 
     }
-    .quick-link-1 {
+    .quick-link {
+        margin: 0;
+    }
+    /* .quick-link-1 {
         margin: 0;
     }
     .quick-link-2 {
@@ -3413,7 +3427,7 @@ body {
     }
     .quick-link-3 {
         margin: 0;
-    }
+    } */
 
 }
 

@@ -310,7 +310,7 @@ window.onload = function () {
    function resetQuick() {
        let temp = $(window).width();
 
-       if(temp <= 1200 && sw_quick == undefined){
+       if(temp <= 1190 && sw_quick == undefined){
            console.log('새로 생성되었다.')
         //    $('.sw-quick-1').addClass('quick-list-focus');
            sw_quick = new Swiper(sw_quick_div, sw_quick_obj);        

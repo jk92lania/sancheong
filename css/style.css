@@ -84,6 +84,40 @@ body {
     float: right;
 }
 
+@media all and (max-width:1430px) {
+    .left {
+        width: 805px;
+    }
+
+    .right {
+        width: 370px;
+    }
+}
+
+@media all and (max-width:1200px) {
+    
+    .left {
+        width: 660px;
+    }
+
+    .right {
+        width: 320px;
+    }
+}
+
+@media all and (max-width:1000px) {
+    
+    .left {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+
 
 /* 클론코드 관련 안내 */
 .modal {
@@ -1944,14 +1978,7 @@ body {
     .sns-sotong span img {
         width: 63px;
     }
-
-    .visual .left {
-        width: 805px;
-    }
-
-    .visual .right {
-        width: 370px;
-    }
+    
 
     .group {
         padding: 0 20px;
@@ -1999,13 +2026,6 @@ body {
         display: none !important;
     }
 
-    .visual .left {
-        width: 660px;
-    }
-
-    .visual .right {
-        width: 320px;
-    }
 
     .group {
         height: 136px;
@@ -2031,15 +2051,6 @@ body {
         width: 100%;
         padding-left: 3%;
         padding-right: 3%;
-    }
-
-    .visual .left {
-        width: 100%;
-        padding-bottom: 50px;
-    }
-
-    .visual .right {
-        width: 100%;
     }
 
     .weather-wrap {
@@ -2490,15 +2501,13 @@ body {
 
 .notice-title {
     position: relative;
-    display: -webkit-box;
+    display: block;
     height: 44px;
 
     color: #010101;
     font-size: 18px;
     line-height: 22px;
 
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
     word-break: break-all;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -2687,7 +2696,8 @@ body {
 
     float: left;
     background: #fff url('../images/control_sprite.png') no-repeat;
-    background-position: 0px -123px;
+    /* background-position: 0px -123px; */
+    background-position: left 100%;
     border: 0;
     cursor: pointer;
     border-radius: 11px;
@@ -2726,19 +2736,176 @@ body {
         width: 1000px;
     }
 
+    .notice-list li {
+        padding: 0 5px;
+    }
+
+    .notice-list li a {
+        font-size: 18px;
+    }
+
+    .notice-list-focus {
+        font-size: 20px !important;
+    }
+
 }
 
 @media all and (max-width : 1000px) {
     .notice .container {
         width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+
+    .notice-list {
+        width: calc(100% - 12vw);
+    }
+
+    .notice-list li {
+        padding: 0 16px;
+    }
+    
+    .notice-list li a {
+        font-size: 20px;
+    }
+    
+    .notice-list-focus {
+        font-size: 23px !important;
+    }
+
+    .sw-notice {
+        width: 1140px !important;
+        margin-top: 32px;
     }
 }
 
-@media all and (max-width : 800px) {}
+@media all and (max-width : 830px) {
+    .notice-list li {
+        padding: 0 8px;
+    }
+    
+    .notice-list li a {
+        font-size: 18px;
+    }
 
-@media all and (max-width : 770px) {}
+    .notice-list-focus {
+        font-size: 20px !important;
+    }
+}
 
-@media all and (max-width : 640px) {}
+@media all and (max-width : 700px) {
+    .notice-list li {
+        padding: 0 5px;
+    }
+    .notice-list li a {
+        font-size: 15px;
+        line-height: 36px;
+    }
+
+    .notice-list-focus {
+        font-size: 16px !important;
+    }
+
+    .notice-list-focus::before {
+        height: 2px;
+    }
+
+    .notice-list-focus::after {
+        bottom: -10px;
+        border-width: 5px;
+        border-bottom: 0;
+    }
+}
+
+
+@media all and (max-width : 640px) {
+    .notice-more {
+        font-size: 0;
+        padding: 0 6px;
+        border-radius: 12px;
+    }
+    .notice-more::before {
+        vertical-align: -7px;
+        padding: 0;
+    }
+
+    .notice-box-info ul {
+        display: table;
+    }
+
+    .notice-box ul li,
+    .notice-box-info ul li {
+        display: none;
+        float: none;
+    }
+    
+    .notice-box ul li:nth-child(1),
+    .notice-box ul li:nth-child(2),
+    .notice-box-info ul li:nth-child(1),
+    .notice-box-info ul li:nth-child(2) {        
+        display: table-row;
+    }
+
+    .notice-link {
+        border: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .notice-cate {
+        font-size: 13px;
+    }
+
+    .notice-title {
+        display: inline-block;
+        margin-top: 40px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .notice-txt {
+        display: none;
+    }
+
+    .notice-day {
+        display: none;
+    }
+
+    .notice .right {
+        height: 390px;
+        padding-top: 25px;
+    }
+
+    .notice .right::before {
+        height: 326px;
+    }
+
+    .notice-slide {
+        height: 326px;
+    }
+
+    .notice-slide-top h2 {
+        font-size:  17px;
+    }
+
+    .sw-notice {
+        width: 720px !important;
+        margin-top: 32px;
+    }
+
+    .sw-notice img {
+        width: 100%;
+    }
+
+    .sw-notice-prev,
+    .sw-notice-next,
+    .sw-notice-pause {
+        width: 25px;
+        height: 25px;
+        background-size: 25px auto;
+    }
+}
 
 
 /* 자주찾는 서비스 */

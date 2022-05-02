@@ -242,8 +242,8 @@ window.onload = function () {
             disableOninteraction : false,
         },
         loop : true,
-        slidesPerView : 2,
-        spaceBetween : 15,
+        slidesPerView : 3,
+        spaceBetween : 45,
         navigation : {
             prevEl : '.sw-notice-prev',
             nextEl : '.sw-notice-next',
@@ -263,6 +263,17 @@ window.onload = function () {
                     '<span class="' + totalClass + '"></span>';
             }
         },
+        breakpoints : {
+            1000 : {                
+                slidesPerView : 2,
+                spaceBetween : 15,
+            },
+            640 : {                
+                slidesPerView : 4,
+                spaceBetween : 0,
+            },
+
+        }
     });
 
     let sw_notice_pause = $('.sw-notice-pause');

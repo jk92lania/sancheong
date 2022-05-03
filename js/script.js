@@ -34,7 +34,7 @@ window.onload = function () {
     let submenu_list_box = $('.submenu-list-box');
     let submenu_part_box = $('.submenu-part-box');
     let submenu_wrap = $('.submenu-wrap');
-    let submenu_wrap_height = [565, 510, 720, 430, 700, 235];
+    let submenu_wrap_height = [565, 540, 720, 430, 700, 235];
     let header_bottom = $('.header-bottom');
     let header = $('.header');
     let header_index = 10000;
@@ -290,6 +290,39 @@ window.onload = function () {
     });
 
     
+
+    
+    // 자주 찾는 서비스 슬라이드
+    let sw_service = new Swiper(".sw-service", {
+        navigation: {
+            nextEl: ".sw-service-next",
+            prevEl: ".sw-service-prev",
+        },
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        loop: true,
+        breakpoints : {
+            1430 : {
+                slidesPerView: 9,
+                slidesPerGroup: 9,
+            },
+            1200 : {
+                slidesPerView: 8,
+                slidesPerGroup: 8,
+            },
+            1000 : {
+                slidesPerView: 7,
+                slidesPerGroup: 7,
+            },
+            800 : {
+                slidesPerView: 5,
+                slidesPerGroup: 5,
+            },
+        }
+    });
+
+
+    
    // 퀵링크 관련 슬라이드
    let sw_quick;
    // 기본 슬라이드 대상
@@ -321,7 +354,7 @@ window.onload = function () {
    function resetQuick() {
        let temp = $(window).width();
 
-       if(temp <= 1190 && sw_quick == undefined){
+       if(temp <= 1200 && sw_quick == undefined){
            console.log('새로 생성되었다.')
         //    $('.sw-quick-1').addClass('quick-list-focus');
            sw_quick = new Swiper(sw_quick_div, sw_quick_obj);        
@@ -349,19 +382,6 @@ window.onload = function () {
     }
     // 처음에 너비 계산 후 실행
     resetQuick();
-
-
-    
-    // 자주 찾는 서비스 슬라이드
-    let sw_service = new Swiper(".sw-service", {
-        navigation: {
-            nextEl: ".sw-service-next",
-            prevEl: ".sw-service-prev",
-        },
-        slidesPerView: 9,
-        slidesPerGroup: 9,
-        loop: true,
-    });
 
 
     // 퀵메뉴 관련 탭 메뉴

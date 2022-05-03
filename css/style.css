@@ -1234,7 +1234,18 @@ body {
     .header-top>.container {
         width: 1200px;
     }
+    .header-bottom>.container {
+        width: 1200px;
+    }
+    .submenu-wrap>.container {
+        width: 1200px;
+    }
 
+    .submenu-part-link a::after, 
+    .submenu-part-link a::before, 
+    .submenu-part-link a {
+        width: 111px;
+    }
 }
 
 @media all and (max-width : 1200px) {
@@ -1244,6 +1255,21 @@ body {
 
     .link-list li {
         padding: 0 10px;
+    }
+
+    .header-bottom>.container {
+        width: 1000px;
+    }
+    .submenu-wrap>.container {
+        width: 1000px;
+    }
+    
+    .submenu-box {
+        width: calc(25% - 30px);
+    }
+    
+    .submenu-box-2x {
+        width: calc(75% - 30px);
     }
 
 
@@ -3100,7 +3126,7 @@ body {
     .service .container {
         width: 1000px;
     }
-
+    
 }
 
 @media all and (max-width : 1000px) {
@@ -3113,7 +3139,39 @@ body {
 
 @media all and (max-width : 770px) {}
 
-@media all and (max-width : 640px) {}
+@media all and (max-width : 640px) {
+    .service .container {
+        padding-bottom: 35px;
+        padding-bottom: 55px;
+    }
+
+    .service h2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .sw_service {
+        height: 120px;
+    }
+
+    .service-slide .swiper-slide a {
+        width: 87px;
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 100px;
+    }
+    .service-slide .swiper-slide a::before,
+    .service-slide .swiper-slide a::after {
+        height: 87px;
+    }
+    
+    .service-slide .swiper-slide a::after {
+        background-size: 87px auto;
+    }
+    
+
+
+}
 
 
 /* 퀵메뉴 */
@@ -3487,6 +3545,8 @@ body {
 
 
 .sw-quick-prev {
+    left: 70px;
+    top: calc(50% - 37px);
     display: none;
     width: 37px;
     height: 37px;
@@ -3519,6 +3579,8 @@ body {
 
 
 .sw-quick-next {
+    right: 70px;
+    top: calc(50% - 37px);
     display: none;    
     width: 37px;
     height: 37px;
@@ -3567,6 +3629,13 @@ body {
     .quick .container {
         width: 1000px;
     }
+    .quick-list-wrap {
+        padding-left: 113px;
+        padding-right: 113px;
+    }
+    .quick-list {
+        width: 100%;
+    }    
     .sw-quick-1 .swiper-wrapper {
         display: flex;
     } 
@@ -3595,24 +3664,67 @@ body {
     .quick-link-3 {
         margin: 0;
     } */
+    
 
 }
 
 @media all and (max-width : 1000px) {
     .quick .container {
         width: 100%;
+        padding:  0 3%;
     }
+    
+    .quick-menu-list li a {
+        width: 197px;
+    }
+
+    .quick-menu-focus .blank {
+        width: 15% !important;
+    }
+
+    .quick-menu-focus-icon-1::after {
+        right: 15% !important;
+    }
+
     .quick-list {
         width: 100%;
     }
-
+    
+    .quick-link {
+        width: 90%;
+    }    
 }
 
-@media all and (max-width : 800px) {}
+@media all and (max-width : 800px) {
+    .quick-menu-list {
+        width: 100%;
+        text-align: center;
+    }
+    .quick-menu-list li {
+        width: 26.2%;
+    }
+    .quick-menu-list li a {
+        width: 100%;
+    }
+}
 
 @media all and (max-width : 770px) {}
 
-@media all and (max-width : 640px) {}
+@media all and (max-width : 640px) {
+    .quick-menu-focus .blank {
+        display: block;
+        width: 10% !important;
+    }
+    .quick-menu-list li a {
+        font-size: 16px;
+    }
+    .quick-menu-list li a::after {
+        width: 19px;
+        height: 18px;
+        background-size: 19px auto;
+        right: 12% !important;
+    }
+}
 
 
 /* 산청으로 떠나요 */

@@ -338,10 +338,10 @@ window.onload = function () {
     breakpoints : {
         1000 : {
             slidesPerView: 4,
-           }, 
-           640 : {
-               slidesPerView: 3,
-           }, 
+        }, 
+        640 : {
+            slidesPerView: 3,
+        }, 
        }
    };
    
